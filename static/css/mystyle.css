@@ -1,0 +1,52 @@
+.my-logo {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-dark .form-control-navbar::-webkit-input-placeholder {
+    color: #000 !important;
+}
+
+.navbar-dark .form-control-navbar::-moz-placeholder {
+    color: #000 !important;
+}
+
+.navbar-dark .form-control-navbar:-ms-input-placeholder {
+    color: #000 !important;
+}
+
+.navbar-dark .form-control-navbar::-ms-input-placeholder {
+    color: #000 !important;
+}
+
+.navbar-dark .form-control-navbar::placeholder {
+    color: #000 !important;
+}
+
+@media only screen and (min-width: 600px) {
+    input.expand-focus {
+        transition-timing-function: ease;
+        transition: width .5s;
+        width: 250px !important;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    input.expand-focus {
+        transition-timing-function: ease;
+        transition: width .5s;
+        width: 300px !important;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    input.expand-focus {
+        transition-timing-function: ease;
+        transition: width .5s;
+        width: 400px !important;
+    }
+}
+
+/*input.expand-focus:focus {*/
+/*    width: 100% !important;*/
+/*}*/
