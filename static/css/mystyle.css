@@ -219,3 +219,15 @@
 .truncate-3 {
     -webkit-line-clamp: 1;
 }
+
+@media only screen and (min-width: 600px) {
+    .img-carousel {
+        height: 60vh !important;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .img-carousel {
+        height: 80vh !important;
+    }
+}
