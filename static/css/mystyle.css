@@ -239,6 +239,48 @@
 .detalle-tienda-cards div.card img {
     height: 30vh !important;
 }
+
 .todas-las-tiendas div.card img {
     height: 40vh !important;
+}
+
+.card-mini {
+    border-radius: 0.2rem !important;
+    margin-bottom: .5rem;
+    border: 2px solid #adb5bd !important;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.card-mini:hover {
+    border-color: var(--warning) !important;
+}
+
+.card-mini.active {
+    border-color: var(--orange) !important;
+}
+
+/*medias para imagen del producto grande*/
+@media screen and (max-width: 576px) {
+    #prod-img-full {
+        height: 35vh !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #prod-img-full {
+        height: 40vh !important;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    #prod-img-full {
+        height: 50vh !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #prod-img-full {
+        height: 55vh !important;
+    }
 }
