@@ -202,7 +202,7 @@
     border-color: #80bdff !important;
 }
 
-.truncate-1, .truncate-2, .truncate-3 {
+.truncate-1, .truncate-2, .truncate-3, .truncate-4 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -217,7 +217,11 @@
 }
 
 .truncate-3 {
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 3;
+}
+
+.truncate-4 {
+    -webkit-line-clamp: 4;
 }
 
 @media only screen and (min-width: 600px) {
@@ -230,4 +234,11 @@
     .img-carousel {
         height: 80vh !important;
     }
+}
+
+.detalle-tienda-cards div.card img {
+    height: 30vh !important;
+}
+.todas-las-tiendas div.card img {
+    height: 40vh !important;
 }
