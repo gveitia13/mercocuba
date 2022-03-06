@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  d = document
+  const d = document
   $('.select2').select2({
     dropdownAutoWidth: false
   });
@@ -11,4 +11,5 @@ $(document).ready(function () {
     this.classList.add('active')
     d.querySelector('#prod-img-full').src = this.src
   })
+  $('.card-mini:first').click()
 });
