@@ -283,4 +283,10 @@
     #prod-img-full {
         height: 55vh !important;
     }
+
+    #form_footer {
+        width: 75% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }

@@ -28,68 +28,16 @@
 
             <!--text footer-->
             <div class="row text-left px-5">
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
-                <div class="col-3 col-sm-2 pb-3">
-                    <span class="text-xs d-block"><b>Amazon music</b></span>
-                    <small class="text-xs">Reproduce millones de canciones</small>
-                </div>
+                {% for var in 16|rjust:'16' %}
+                    <div class="col-3 col-sm-2 pb-3">
+                        <a rel="follow" class="cursor-pointer" style="color: inherit">
+                            <span class="text-xs d-block"><b>Amazon music</b></span>
+                            <small class="text-xs">Reproduce millones de canciones</small>
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
-            <h4 class="text-center">By GoDjango</h4>
+            <span class="text-center">Desarrollado por GoDjango, propiedad de MercoCuba &copy;2022. Todos los derechos reservados</span>
         </footer>
     {% endblock %}
     </body>

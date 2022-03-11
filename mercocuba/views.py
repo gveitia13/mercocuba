@@ -7,6 +7,7 @@ class CartDetails(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Detalles del carrito'
+        context['cant_negocios'] = 16
         return context
 
 
