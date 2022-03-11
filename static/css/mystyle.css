@@ -290,3 +290,12 @@
         margin-right: auto !important;
     }
 }
+
+#buscador {
+    border-left: none;
+    border-right: none;
+}
+
+#inputGroupSelect {
+    border: 1px solid #00366d;
+}

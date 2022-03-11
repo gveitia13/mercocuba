@@ -1,5 +1,5 @@
 {% load static %}
-<nav class="main-header navbar navbar-expand navbar-dark navbar-navy bg-semi-black py-0"
+<nav class="main-header navbar navbar-expand navbar-dark navbar-navy bg-semi-black py-1"
      style="margin-left: 0;border-bottom-color: transparent">
     <div class="container-fluid">
         <a href="#" class="navbar-brand">
@@ -24,7 +24,7 @@
         <form class="form-inline ml-3">
             <div class="input-group input-group-sm">
                 <li class="dropdown input-group-prepend">
-                    <select class="custom-select  custom-select-sm bg-light" id="inputGroupSelect01"
+                    <select class="custom-select  custom-select-sm bg-light" id="inputGroupSelect"
                             style="border-bottom-right-radius: 0;border-top-right-radius: 0">
                         <option selected>Todos</option>
                         <option value="1">One</option>
@@ -34,10 +34,9 @@
                 </li>
                 <!--  cosas serias-->
                 <input class="form-control form-control-navbar bg-light w-25 expand-focus" type="search"
-                       placeholder="Buscar"
-                       aria-label="Search">
+                       placeholder="Buscar" aria-label="Search" id="buscador">
                 <div class="input-group-append">
-                    <button class="btn btn-navbar bg-warning" type="submit">
+                    <button class="btn btn-navbar bg-warning" type="submit" style="height: 31px">
                         <i class="mdi mdi-magnify"></i>
                     </button>
                 </div>
