@@ -1,0 +1,130 @@
+{% extends 'body.html' %}
+{% load static %}
+{% block content %}
+    <hr>
+    <h4 class="d-inline-block pl-2">Sopping Cart</h4>
+    <span class="d-inline-block float-right pr-3 ">Price</span>
+    <hr class="mt-0">
+    <div class="cards-horizontal">
+        <div class="card w-100 shadow-none border-bottom rounded-0">
+            <div class="row no-gutters">
+                <div class="col-sm-2 col-3 my-auto">
+                    <img class="card-img" src="{% static 'img/card-full-size/card.jpeg' %}" alt="Suresh Dasari Card">
+                </div>
+                <div class="col-sm-8 col-7">
+                    <div class="card-body pr-0 px-sm-3 pl-1 pt-1">
+                        <h5 class="card-title truncate-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                            Aspernatur
+                            commodi consectetur deleniti dicta doloremque eaque et ipsa iste iusto neque
+                            officiis
+                            quisquam quo sint, tenetur veritatis voluptas voluptatibus! Laborum, quae?</h5>
+                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star"></i>
+                        <select class="custom-select d-block custom-select-sm bg-light" style="width: 100px">
+                            <option selected>Qty: 1</option>
+                            <option value="1">Qty: 5</option>
+                            <option value="2">Qty: 10</option>
+                            <option value="3">Qty: 20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-2">
+                    <span class="float-right pr-2 pt-1"><b>$ 8.98</b></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-100 shadow-none border-bottom rounded-0">
+            <div class="row no-gutters">
+                <div class="col-sm-2 col-3 my-auto">
+                    <img class="card-img" src="{% static 'img/card-full-size/card1.jpeg' %}" alt="Suresh Dasari Card">
+                </div>
+                <div class="col-sm-8 col-7">
+                    <div class="card-body pr-0 px-sm-3 pl-1 pt-1">
+                        <h5 class="card-title truncate-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                            Aspernatur
+                            commodi consectetur deleniti dicta doloremque eaque et ipsa iste iusto neque
+                            officiis
+                            quisquam quo sint, tenetur veritatis voluptas voluptatibus! Laborum, quae?</h5>
+                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star"></i>
+                        <select class="custom-select d-block custom-select-sm bg-light" style="width: 100px">
+                            <option selected>Qty: 1</option>
+                            <option value="1">Qty: 5</option>
+                            <option value="2">Qty: 10</option>
+                            <option value="3">Qty: 20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-2">
+                    <span class="float-right pr-2 pt-1"><b>$ 20.98</b></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card w-100 shadow-none border-bottom rounded-0">
+            <div class="row no-gutters">
+                <div class="col-sm-2 col-3 my-auto">
+                    <img class="card-img" src="{% static 'img/card-full-size/card2.jpeg' %}" alt="Suresh Dasari Card">
+                </div>
+                <div class="col-sm-8 col-7">
+                    <div class="card-body pr-0 px-sm-3 pl-1 pt-1">
+                        <h5 class="card-title truncate-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                            Aspernatur
+                            commodi consectetur deleniti dicta doloremque eaque et ipsa iste iusto neque
+                            officiis
+                            quisquam quo sint, tenetur veritatis voluptas voluptatibus! Laborum, quae?</h5>
+                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star"></i>
+                        <select class="custom-select d-block custom-select-sm bg-light" style="width: 100px">
+                            <option selected>Qty: 1</option>
+                            <option value="1">Qty: 5</option>
+                            <option value="2">Qty: 10</option>
+                            <option value="3">Qty: 20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-2">
+                    <span class="float-right pr-2 pt-1"><b>$ 8.98</b></span>
+                </div>
+            </div>
+        </div>
+
+        <span class="text-lg d-flex flex-row-reverse pr-1"><b>Total</b> (2 items): <b>$29.97</b></span>
+    </div>
+    <br>
+    <form class="px-5">
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <button type="button" class="btn btn-secondary form-control truncate-1">Al recibir los
+                    productos
+                </button>
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="btn btn-secondary form-control truncate-1">CryptoPas</button>
+            </div>
+            <div class="from-group col-md-3">
+                <button type="button" class="btn btn-secondary form-control truncate-1">Transfermovil</button>
+            </div>
+            <div class="from-group col-md-3 mt-3 mt-md-0">
+                <button type="button" class="btn btn-secondary form-control truncate-1">PayPal</button>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-12 mt-3 mt-md-0">
+                        <textarea name="area" class="form-control bg-secondary" rows="4"
+                                  placeholder="Ni idea q va aki, entonces pongo esto mismo lol"></textarea>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}
+{% block form_footer %}
+
+{% endblock %}

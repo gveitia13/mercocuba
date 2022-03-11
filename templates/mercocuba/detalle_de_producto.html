@@ -1,0 +1,180 @@
+{% extends 'body.html' %}
+{% load static %}
+{% block content %}
+    <br>
+    <div class="product-detail row">
+        <div class="col-12 col-md-4">
+            <div class="row">
+                <div class="col-2">
+                    <div class="">
+                        <img src="{% static 'img/product_details/1.jpg' %}" class="card-mini" alt="" width="35"
+                             height="40">
+                    </div>
+                    <div class="">
+                        <img src="{% static 'img/product_details/2.jpg' %}" class="card-mini" alt="" width="35"
+                             height="40">
+                    </div>
+                    <div class="">
+                        <img src="{% static 'img/product_details/3.jpg' %}" class="card-mini" alt="" width="35"
+                             height="40">
+                    </div>
+                    <div class="">
+                        <img src="{% static 'img/product_details/4.jpg' %}" class="card-mini" alt="" width="35"
+                             height="40">
+                    </div>
+                    <div class="">
+                        <img src="{% static 'img/product_details/5.jpg' %}" class="card-mini" alt="" width="35"
+                             height="40">
+                    </div>
+                    <div class="hola">
+                        <img src="{% static 'img/product_details/1.jpg' %}" class="card-mini" alt="" width="35"
+                             height="40">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div>
+                        <img src="{% static 'img/product_details/1.jpg' %}" id="prod-img-full" class="card-img-top">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 py-4 py-md-0">
+            <h4>Nintendo Switch Pro Controller</h4>
+            <div class="pb-2">
+                <img src="{% static 'img/product_details/cart-icon.png' %}" alt="" width="25" height="25">
+                <span><strong class="text-orange text-lg" style="vertical-align: middle">581</strong></span>
+                <img src="{% static 'img/product_details/ojo.jpeg' %}" alt="" width="25" height="25">
+                <span><strong class="text-orange text-lg" style="vertical-align: middle">88</strong></span>
+            </div>
+            <div>
+                <h6>Sobre este artículo</h6>
+                <ul>
+                    <li><small>LLeva tus sesiones de juego a otro nivel superior con el Nintendo Switch Pro
+                        Controller</small>
+                    </li>
+                    <li><small>Conmutador de nintendo portátil a un gran precio</small></li>
+                    <li><small>Viene con cable de carga (USB C a USB A)</small></li>
+                </ul>
+            </div>
+            <p class="text-primary">Nuevo (2) desde <span class="text-orange">US$ 90.49</span></p>
+        </div>
+        <div class="col-12 col-md-2">
+            <div class="text-center">
+                <img src="{% static 'img/product_details/cart-icon.png' %}" class=""
+                     style="height: 100px;width: 100px;">
+            </div>
+            <br>
+            <div class="text-center text-lg">
+                <i class="mdi mdi-star text-orange"></i>
+                <i class="mdi mdi-star text-orange"></i>
+                <i class="mdi mdi-star text-orange"></i>
+                <i class="mdi mdi-star text-orange"></i>
+                <i class="mdi mdi-star text-orange"></i>
+            </div>
+            <div class="text-center text-lg">
+                <small>Compartir</small>
+                <a href="#"><i class="mdi mdi-email-outline text-black-50"></i></a>
+                <a href="#"><i class="mdi mdi-facebook text-blue"></i></a>
+                <a href="#"><i class="mdi mdi-instagram text-pink"></i></a>
+                <a href="#"><i class="mdi mdi-twitter text-primary"></i></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h5 class="text-orange">Descripción del producto</h5>
+        <ul style="list-style: none">
+            <li class="pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolor
+                esse est iste modi
+                nihil nulla officia optio pariatur quaerat qui ratione sed tempora vel veritatis vero,
+                voluptatem voluptatibus. Ratione.
+            </li>
+            <li class="pb-2"><b>Kontrol asdasdsa hola mundo</b></li>
+            <ul style="list-style: none;">
+                <li class="pb-2">Select control asd hola mundo</li>
+            </ul>
+        </ul>
+    </div>
+    <hr>
+    <!-- Tabla de information del product-->
+    <h5 class="text-orange">Información del producto</h5>
+    <br>
+    <div class="row">
+        <div class="col-12 col-lg-7">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td class="bg-gray-light">ASIN</td>
+                    <td>B0123dsaddsd</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-light">Fecha de lanzamiento</td>
+                    <td>Marzo 3 2018</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-light">Opinión de los clientes</td>
+                    <td>
+                        <div>
+                            <i class="mdi mdi-star text-orange"></i>
+                            <i class="mdi mdi-star text-orange"></i>
+                            <i class="mdi mdi-star text-orange"></i>
+                            <i class="mdi mdi-star text-orange"></i>
+                            <i class="mdi mdi-star text-orange"></i>
+                            <a href="#">574733 Clasificaciones</a>
+                        </div>
+                        <span>4.9 de 5 estrellas</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-light">Clasificación en los más vendidos de Amazon</td>
+                    <td>
+                        <div>N<sup>o</sup> 16 en Videojuegos (<a href="#">Ver el top 100 Videojuegos</a>)</div>
+                        <div>N<sup>o</sup> 1 en controles para nintendo Switch</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-light">Precio</td>
+                    <td>
+                            <span>El precio tachado es el precio de la lista. Los ahorros
+                                representan un descuento sobre el precio de la lista</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-light">Dimensiones del producto</td>
+                    <td>
+                        <span>2,62 x 6,14 x 5,67 pulgadas; 14,8 onzas</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-light">Binding</td>
+                    <td>
+                        <span>Videojuegos</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-light">Clasificado</td>
+                    <td>
+                        <span>Everyone</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-light" style="border-bottom: 1px solid #dee2e6;">Numero de modelo del
+                        producto
+                    </td>
+                    <td style="border-bottom: 1px solid #dee2e6;">
+                        <span>SDFDFGDGD</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <h2 class="text-orange text-center">Productos relacionados</h2>
+    <br>
+    {% include 'related_products.html' %}
+    <br>
+{% endblock %}
+{% block form_footer %}
+
+{% endblock %}

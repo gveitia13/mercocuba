@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block body %}
+    <body>
+    <div class="wrapper">
+        <!-- Navbar -->
+        {% include 'navbar.html' %}
+        <!-- sub Navbar -->
+        {% include 'sub_navbar.html' %}
+        <!-- Content -->
+        <div class="content">
+            <div class="container-fluid py-2  px-lg-5">
+                <!--Carousel-->
+                {% include 'carousel.html' %}
+                {% block content %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    {% block footer %}
+        <footer class="main-footer bg-navy text-center ml-0">
+
+            {% block form_footer %}
+                {% include 'form_footer.html' %}
+            {% endblock %}
+            <br>
+
+            <!--text footer-->
+            <div class="row text-left px-5">
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+                <div class="col-3 col-sm-2 pb-3">
+                    <span class="text-xs d-block"><b>Amazon music</b></span>
+                    <small class="text-xs">Reproduce millones de canciones</small>
+                </div>
+            </div>
+            <h4 class="text-center">By GoDjango</h4>
+        </footer>
+    {% endblock %}
+    </body>
+{% endblock %}
