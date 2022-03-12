@@ -1,6 +1,10 @@
 from django.views.generic import TemplateView
 
 
+class Random(TemplateView):
+    template_name = 'mercocuba/random.html'
+
+
 class CartDetails(TemplateView):
     template_name = 'mercocuba/detalle_carrito.html'
 

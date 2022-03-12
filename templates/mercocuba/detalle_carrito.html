@@ -1,13 +1,16 @@
 {% extends 'body.html' %}
 {% load static %}
+{% block carousel %}
+
+{% endblock %}
 {% block content %}
-    <hr>
-    <h4 class="d-inline-block pl-2">Sopping Cart</h4>
+    <h4 class="d-inline-block pl-2">Shopping Cart</h4>
     <span class="d-inline-block float-right pr-3 ">Price</span>
     <hr class="mt-0">
     <div class="cards-horizontal">
-        <div class="card w-100 shadow-none border-bottom rounded-0">
+        <div class="card w-100 shadow-none border-bottom rounded-0 card-s-cart">
             <div class="row no-gutters">
+                <input type="hidden" value="8.98">
                 <div class="col-sm-2 col-3 my-auto">
                     <img class="card-img" src="{% static 'img/card-full-size/card.jpeg' %}" alt="Suresh Dasari Card">
                 </div>
@@ -22,22 +25,26 @@
                         <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
                         <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
                         <i class="mdi mdi-star"></i>
-                        <select class="custom-select d-block custom-select-sm bg-light" style="width: 100px">
-                            <option selected>Qty: 1</option>
-                            <option value="1">Qty: 5</option>
-                            <option value="2">Qty: 10</option>
-                            <option value="3">Qty: 20</option>
-                        </select>
+                        {#                        <select class="custom-select d-block custom-select-sm bg-light" style="width: 100px">#}
+                        {#                            <option selected>Qty: 1</option>#}
+                        {#                            <option value="1">Qty: 5</option>#}
+                        {#                            <option value="2">Qty: 10</option>#}
+                        {#                            <option value="3">Qty: 20</option>#}
+                        {#                        </select>#}
+                        <input type="number" min="0" class="form-control text-center form-control-sm input-cantidad"
+                               placeholder="cantidad" value="1"
+                               style="width: 85px">
                     </div>
                 </div>
                 <div class="col-sm-2 col-2">
-                    <span class="float-right pr-2 pt-1"><b>$ 8.98</b></span>
+                    <span class="float-right pr-2 pt-1 span-price"><b>$ <span>8.98</span></b></span>
                 </div>
             </div>
         </div>
 
-        <div class="card w-100 shadow-none border-bottom rounded-0">
+        <div class="card w-100 shadow-none border-bottom rounded-0 card-s-cart">
             <div class="row no-gutters">
+                <input type="hidden" value="20.98">
                 <div class="col-sm-2 col-3 my-auto">
                     <img class="card-img" src="{% static 'img/card-full-size/card1.jpeg' %}" alt="Suresh Dasari Card">
                 </div>
@@ -52,22 +59,20 @@
                         <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
                         <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
                         <i class="mdi mdi-star"></i>
-                        <select class="custom-select d-block custom-select-sm bg-light" style="width: 100px">
-                            <option selected>Qty: 1</option>
-                            <option value="1">Qty: 5</option>
-                            <option value="2">Qty: 10</option>
-                            <option value="3">Qty: 20</option>
-                        </select>
+                        <input type="number" min="1" class="form-control text-center form-control-sm input-cantidad"
+                               placeholder="cantidad" value="1"
+                               style="width: 85px">
                     </div>
                 </div>
                 <div class="col-sm-2 col-2">
-                    <span class="float-right pr-2 pt-1"><b>$ 20.98</b></span>
+                    <span class="float-right pr-2 pt-1 span-price"><b>$ <span>20.98</span></b></span>
                 </div>
             </div>
         </div>
 
-        <div class="card w-100 shadow-none border-bottom rounded-0">
+        <div class="card w-100 shadow-none border-bottom rounded-0 card-s-cart">
             <div class="row no-gutters">
+                <input type="hidden" value="8.98">
                 <div class="col-sm-2 col-3 my-auto">
                     <img class="card-img" src="{% static 'img/card-full-size/card2.jpeg' %}" alt="Suresh Dasari Card">
                 </div>
@@ -82,44 +87,46 @@
                         <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
                         <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
                         <i class="mdi mdi-star"></i>
-                        <select class="custom-select d-block custom-select-sm bg-light" style="width: 100px">
-                            <option selected>Qty: 1</option>
-                            <option value="1">Qty: 5</option>
-                            <option value="2">Qty: 10</option>
-                            <option value="3">Qty: 20</option>
-                        </select>
+                        <input type="number" min="0" class="form-control text-center form-control-sm input-cantidad"
+                               placeholder="cantidad" value="1"
+                               style="width: 85px">
                     </div>
                 </div>
                 <div class="col-sm-2 col-2">
-                    <span class="float-right pr-2 pt-1"><b>$ 8.98</b></span>
+                    <span class="float-right pr-2 pt-1 span-price"><b>$ <span>8.98</span></b></span>
                 </div>
             </div>
         </div>
 
-        <span class="text-lg d-flex flex-row-reverse pr-1"><b>Total</b> (2 items): <b>$29.97</b></span>
+        <span class="text-lg d-flex flex-row-reverse pr-1" id="total-price"><b>Total</b> (2 items): <b>$29.97</b></span>
     </div>
+    <br>
+    <h4 class="text-center">Métodos de pago</h4>
     <br>
     <form class="px-5">
         <div class="form-row">
             <div class="form-group col-md-3">
-                <button type="button" class="btn btn-secondary form-control truncate-1">Al recibir los
+                <button type="button" class="btn btn-secondary form-control truncate-1 btn-metodo-pago">Al recibir los
                     productos
                 </button>
             </div>
             <div class="form-group col-md-3">
-                <button type="button" class="btn btn-secondary form-control truncate-1">CryptoPas</button>
+                <button type="button" class="btn btn-secondary form-control truncate-1 btn-metodo-pago">CryptoPas
+                </button>
             </div>
             <div class="from-group col-md-3">
-                <button type="button" class="btn btn-secondary form-control truncate-1">Transfermovil</button>
+                <button type="button" class="btn btn-secondary form-control truncate-1 btn-metodo-pago">Transfermovil
+                </button>
             </div>
             <div class="from-group col-md-3 mt-3 mt-md-0">
-                <button type="button" class="btn btn-secondary form-control truncate-1">PayPal</button>
+                <button type="button" class="btn btn-secondary form-control truncate-1 btn-metodo-pago">PayPal</button>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-12 mt-3 mt-md-0">
-                        <textarea name="area" class="form-control bg-secondary" rows="4"
-                                  placeholder="Ni idea q va aki, entonces pongo esto mismo lol"></textarea>
+                {#                        <textarea name="area" class="form-control bg-secondary" rows="4"#}
+                {#                                  placeholder="Ni idea q va aki, entonces pongo esto mismo lol"></textarea>#}
+                <div></div>
             </div>
         </div>
     </form>
@@ -127,4 +134,8 @@
 {% endblock %}
 {% block form_footer %}
 
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/cart_details.js' %}"></script>
 {% endblock %}

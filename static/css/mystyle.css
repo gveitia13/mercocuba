@@ -299,3 +299,15 @@
 #inputGroupSelect {
     border: 1px solid #00366d;
 }
+
+.img-card-product:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    z-index: 999999;
+}
+
+.btn-metodo-pago:focus {
+    margin-top: -10px;
+    transition: margin-top ease-out;
+    background-color: var(--gray-dark) !important;
+}
