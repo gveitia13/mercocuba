@@ -21,7 +21,7 @@
             </a>
         </ul>
         <!-- SEARCH FORM -->
-        <form class="form-inline ml-3">
+        <form class="form-inline ml-3 form-buscar-navbar">
             <div class="input-group input-group-sm">
                 <li class="dropdown input-group-prepend">
                     <select class="custom-select  custom-select-sm bg-light" id="inputGroupSelect"
@@ -43,10 +43,9 @@
             </div>
         </form>
         <ul class="navbar-nav">
-            <a rel="store" class="nav-link pr-1" style="cursor: pointer" data-toggle="modal"
-               data-target="#asd"><i
-                    class="mdi mdi mdi-home-group d-sm-inline-block"></i>
-                <span class="d-md-inline-block d-none"> Todas las tiendas</span>
+            <a href="{% url 'all_stores' %}" class="nav-link pr-0 py-sm-1 py-0 pl-sm-2 pl-1">
+{#                <i class="mdi mdi mdi-home-group d-sm-inline-block"></i>#}
+                <span class="d-flex "> Todas las tiendas</span>
             </a>
         </ul>
         <!-- Right navbar links -->

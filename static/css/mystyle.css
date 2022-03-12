@@ -311,3 +311,7 @@
     transition: margin-top ease-out;
     background-color: var(--gray-dark) !important;
 }
+
+.form-buscar-navbar:active {
+    outline: none;
+}
