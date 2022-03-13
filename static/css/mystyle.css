@@ -319,3 +319,17 @@
 body {
     overflow-x: hidden;
 }
+
+/*.swiper-wrapper, .swiper-slide {*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap;*/
+/*    overflow-x: auto;*/
+/*}*/
+
+/*.swiper-slide {*/
+/*    flex: 0 0 auto;*/
+/*}*/
+
+/*.swiper-wrapper {*/
+/*    -webkit-overflow-scrolling: touch;*/
+/*}*/

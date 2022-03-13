@@ -47,31 +47,6 @@
 <script src="{% static 'js/function.js' %}"></script>
 <!-- Initialize Swiper -->
 <script>
-  let cant = 9
-  if (window.innerWidth < 1200)
-    cant = 8
-  if (window.innerWidth < 1000)
-    cant = 7
-  if (window.innerWidth < 800)
-    cant = 6
-  if (window.innerWidth < 700)
-    cant = 5
-  if (window.innerWidth < 600)
-    cant = 4
-  if (window.innerWidth < 500)
-    cant = 3
-
-  console.log(window.innerWidth)
-  console.log(cant)
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: cant,
-    spaceBetween: 15,
-    freeMode: true,
-    pagination: {
-      {#el: ".swiper-pagination",#}
-      clickable: true,
-    },
-  });
 </script>
 {% block scripts %}
 
