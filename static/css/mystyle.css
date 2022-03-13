@@ -315,3 +315,7 @@
 .form-buscar-navbar:active {
     outline: none;
 }
+
+body {
+    overflow-x: hidden;
+}

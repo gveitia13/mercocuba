@@ -1,11 +1,9 @@
 <nav class=" navbar navbar-expand navbar-dark navbar-navy py-0"
      style="margin-left: 0;border-top-color: transparent">
-    <div class="container-fluid grid-container">
+    <div class="container-fluid swiper mySwiper">
         <!-- Left navbar links -->
-        <ul class="navbar-nav">
-            {#            <li rel="store" class="px-1 nav-item">#}
-            {#                <span class="d-sm-inline-block d-none"> TODO</span>#}
-            <li class="dropdown nav-link ">
+        <ul class="navbar-nav swiper-wrapper">
+            <li class="dropdown nav-link swiper-slide text-nowrap">
                 <a class="" href="#" role="button" style="color:inherit"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="mdi mdi mdi-menu d-sm-inline-block"></i> TODO
@@ -16,13 +14,24 @@
                     <a class="dropdown-item" href="#">Categoria 3</a>
                 </div>
             </li>
-            {#            </li>#}
-            <li class="nav-link" style="cursor: pointer">
+
+            <li class="nav-link swiper-slide text-nowrap" style="cursor: pointer">
                 <span class=""> MAS VENDIDOS</span>
             </li>
-            <li class="nav-link" style="cursor: pointer">
-                <span class=""> MAS VISTOS</span>
+            <li class="nav-link swiper-slide text-nowrap" style="cursor: pointer">
+                <span class=""> MAS VISTOS </span>
+            </li>
+
+            <li class="nav-link swiper-slide text-nowrap" style="cursor: pointer">
+                <span class=""> FILTRO 1</span>
+            </li>
+            <li class="nav-link swiper-slide text-nowrap" style="cursor: pointer">
+                <span class=""> FILTRO RANDOM</span>
+            </li>
+            <li class="nav-link swiper-slide text-nowrap" style="cursor: pointer">
+                <span class=""> OTRO FILTRO</span>
             </li>
         </ul>
+{#        <div class="swiper-pagination"></div>#}
     </div>
 </nav>
