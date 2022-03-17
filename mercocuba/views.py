@@ -49,3 +49,12 @@ class AllStores(TemplateView):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Todas las tiendas'
         return context
+
+
+class Contact(TemplateView):
+    template_name = 'mercocuba/contact.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Contact, self).get_context_data(**kwargs)
+        context['title'] = 'Contacto'
+        return context
