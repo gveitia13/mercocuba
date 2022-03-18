@@ -56,12 +56,13 @@
                     <li><small>Viene con cable de carga (USB C a USB A)</small></li>
                 </ul>
             </div>
-{#            <p class="text-primary">Nuevo (2) desde <span class="text-orange">US$ 90.49</span></p>#}
+            {#            <p class="text-primary">Nuevo (2) desde <span class="text-orange">US$ 90.49</span></p>#}
         </div>
         <div class="col-12 col-md-2">
-            <div class="text-center">
-                <img src="{% static 'img/product_details/cart-icon.png' %}" class=""
-                     style="height: 100px;width: 100px;">
+            <div class="text-center p-2">
+                <a href="{% url 'cart_details' %}">
+                    <img src="{% static 'img/product_details/cart-plus2.png' %}" class=""
+                         style="height: 85px;width: 85px;"></a>
             </div>
             <br>
             <div class="text-center text-lg">

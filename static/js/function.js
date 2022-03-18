@@ -56,6 +56,21 @@ $(document).ready(function () {
     d.querySelectorAll('.hs').forEach(e => e.classList.remove('hs', 'full', 'no-scrollbar'))
     d.querySelectorAll('.item').forEach(e => e.classList.remove('item'))
   }
+  $('#inputGroupSelect').change(function () {
+    if ($(this).val() === 'Otro') {
+      $(this)
+        .attr('name', '')
+        .hide()
+        .next('input').attr({
+        'type': 'number',
+        'name': 'selectNavbar',
+        'min': 0,
+        'class': 'form-control bg-light text-center form-control-sm',
+        'style': 'border-bottom-right-radius: 0;border-top-right-radius: 0;border: 1px solid #00366d;width: 70px;',
+      })
+        .focus()
+    }
+  })
 });
 
 function isMobile() {

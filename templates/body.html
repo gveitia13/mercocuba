@@ -3,8 +3,11 @@
 {% block body %}
     <body>
     <div class="wrapper">
-        <!-- Navbar -->
-        {% include 'navbar.html' %}
+        {% block navbar %}
+            <!-- Navbar -->
+            {% include 'navbar.html' %}
+        {% endblock %}
+
         <!-- sub Navbar -->
         {% include 'sub_navbar.html' %}
         <!-- Content -->
