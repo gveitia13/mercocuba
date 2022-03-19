@@ -1,9 +1,41 @@
 {% extends 'body.html' %}
+{% load static %}
 {% block content %}
     <hr>
     {% include 'related_products.html' %}
 
 {% endblock %}
 {% block form_footer %}
-    <h1>Logo y datos y q se yo de la tienda</h1>
+    <div class="align-content-center">
+        <img src="{% static 'img/MercoCuba-final-01.png' %}" alt="" height="60">
+        <img src="{% static 'img/letra-white.png' %}" alt="MercoCuba" height="40">
+    </div>
+    <br>
+    <div class="rayita py-2"></div>
+    <div class="row text-left px-3 px-lg-5">
+        <div class="col-sm-12 col-lg-6">
+            <p><b>Dirección de la empresa:</b> En algún lugar</p>
+            <p><b>Teléfono: </b><a href="tel:+53 58496023" style="color:inherit">+53 58496023</a></p>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <p><b>Responsables de la empresa: </b>Pánfilo Epifanio, Elon Musk, Daddy Yankee</p>
+            <p><b>Mapa de Google: </b> Aquí va algo</p>
+        </div>
+    </div>
+    <br>
+    <span>Redes sociales</span>
+    <div class="px-3 px-lg-5">
+        <a href="#" class="text-white"><i class="mdi mdi-36px mdi-web"></i></a>
+        <a href="#" class="text-white"><i class="mdi mdi-36px mdi-facebook-box"></i></a>
+        <a href="#" class="text-white"><i class="mdi mdi-36px mdi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="mdi mdi-36px mdi-whatsapp"></i></a>
+        <a href="#" class="text-white"><i class="mdi mdi-36px mdi-telegram"></i></a>
+        <a href="#" class="text-white"><i class="mdi mdi-36px mdi-linkedin-box"></i></a>
+        <a href="#"><img src="{% static 'img/tiktok.png' %}" style="vertical-align: baseline" alt="" height="28"></a>
+    </div>
+    <div class="text-lg-center text-left px-3 px-lg-5">
+        <span class="">Visitas: 15</span>
+    </div>
+    <div class="rayita"></div>
+
 {% endblock %}
