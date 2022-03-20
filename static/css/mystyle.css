@@ -194,6 +194,14 @@
     cursor: pointer !important;
 }
 
+.cursor-zoom-in {
+    cursor: zoom-in !important;
+}
+
+.cursor-none{
+    cursor: none!important;
+}
+
 .border-light {
     border-color: #ced4da !important;
 }
@@ -341,3 +349,19 @@ body {
     box-shadow: 0 0 1px rgba(0, 0, 0, .3), 0 2px 3px rgba(0, 0, 0, .4);
     cursor: pointer;
 }
+
+/*Inventos w3school*/
+/*
+.img-magnifier-container {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    !*Set the size of the magnifier glass:*!
+    width: 120px;
+    height: 120px;
+}*/

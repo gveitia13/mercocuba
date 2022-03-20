@@ -1,5 +1,8 @@
 {% extends 'body.html' %}
 {% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'lib/magnifer-js/magnifier.css' %}">
+{% endblock %}
 {% block content %}
     <br>
     <div class="product-detail row">
@@ -32,7 +35,7 @@
                     </div>
                 </div>
                 <div class="col-10">
-                    <div>
+                    <div class="cursor-none img-magnifier-container">
                         <img src="{% static 'img/product_details/1.jpg' %}" id="prod-img-full" class="card-img-top">
                     </div>
                 </div>
@@ -73,7 +76,7 @@
                 <i class="mdi mdi-star text-orange"></i>
             </div>
             <div class="text-center text-lg">
-                <small>Compartir</small>
+                <small class="d-block d-lg-inline-block">Compartir</small>
                 <a href="#"><i class="mdi mdi-email-outline text-black-50"></i></a>
                 <a href="#"><i class="mdi mdi-facebook text-blue"></i></a>
                 <a href="#"><i class="mdi mdi-instagram text-pink"></i></a>
@@ -177,5 +180,8 @@
     <br>
 {% endblock %}
 {% block form_footer %}
+
+{% endblock %}
+{% block scripts %}
 
 {% endblock %}
