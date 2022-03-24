@@ -1,0 +1,99 @@
+{% load static %}
+<nav class="main-header navbar navbar-expand navbar-dark navbar-navy bg-semi-black py-1 px-0 px-lg-4"
+     style="margin-left: 0;border-bottom-color: transparent">
+    <div class="container-fluid justify-content-start" style="vertical-align: middle">
+        <a href="#" class="navbar-brand mr-0">
+            <img src="{% static 'img/MercoCuba-final-01.png' %}" alt="MercoCuba Logo"
+                 class="brand-image my-logo elevation-0"
+                 style="opacity: 1">
+        </a>
+        <div class="d-inline-block">
+            <div class="">
+                <ul class="navbar-nav ml-1 ml-sm-3">
+                    <li class="nav-item">
+                        <a rel="store" class="nav-link px-0 py-0 text-nowrap">
+                            <div class="d-inline-block">
+                                <i class="mdi mdi-map-marker-outline"></i>
+                                <select class="custom-select-sm custom-select cursor-pointer ml-n2 mt-n1 px-1" id="cuba"
+                                        name="xds">
+                                    <option selected>Cuba</option>
+                                    <option value="1">Yuma</option>
+                                    <option value="2">Dominicana</option>
+                                    <option value="3">Haiti</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'all_stores' %}" class="nav-link text-nowrap pr-0 py-0 pl-1">
+                            <span class=" "> Todas las tiendas</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <ul class="navbar-nav ml-1 ml-sm-3">
+                    <form class="form-inline  form-buscar-navbar">
+                        <div class="input-group input-group-sm">
+                            <li class="dropdown input-group-prepend">
+                                <select class="custom-select custom-select-sm bg-light" id="inputGroupSelect"
+                                        style="border-bottom-right-radius: 0;border-top-right-radius: 0;"
+                                        name="selectNavbar">
+                                    <option selected>Todos</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                                <input type="hidden">
+                            </li>
+                            <!--  cosas serias-->
+                            <input class="form-control form-control-navbar bg-light pl-0 w-25 expand-focus"
+                                   type="search"
+                                   placeholder="Buscar" aria-label="Search" id="buscador">
+                            <div class="input-group-append">
+                                <button class="btn btn-navbar bg-warning" type="submit" style="height: 31px">
+                                    <i class="mdi mdi-magnify"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-inline-block ml-auto">
+            <ul class="navbar-nav">
+                <li class="">
+                    <a href="{% url 'contact' %}" class="nav-link py-0 px-1 px-sm-3">
+                        <span class="mdi mdi-contact-mail mdi-30px"></span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a rel="cart" class="nav-link pl-1 pr-1 py-0 cursor-pointer" data-toggle="dropdown">
+                        <i class="mdi mdi-cart-outline text-warning mdi-30px d-sm-inline-block"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                    <span class="dropdown-item-title text-muted dropdown-item">
+                        Tiendas activas:
+                    </span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <span class="">Tienda de la UCI </span>
+                            <span class="badge badge-success badge-pill">23</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>Amazon</span>
+                            <span class="badge badge-danger badge-pill">67</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>Carlos 3ro</span>
+                            <span class="badge badge-primary badge-pill">7</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

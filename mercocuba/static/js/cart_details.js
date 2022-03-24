@@ -1,4 +1,4 @@
-d = document
+// d = document
 let cant = 0
 d.querySelectorAll('.input-cantidad').forEach(e => cant++)
 let product = cant === 1 ? `producto` : 'productos',

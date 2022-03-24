@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block content %}
-    <h4 class="d-inline-block pl-2">Shopping Cart</h4>
-    <span class="d-inline-block float-right pr-3 ">Price</span>
+    <h4 class="d-inline-block pl-2">Carrito de compra</h4>
+    <span class="d-inline-block float-right pr-3 ">Precio</span>
     <hr class="mt-0">
     <div class="cards-horizontal">
         <div class="card w-100 shadow-none border-bottom rounded-0 card-s-cart">
@@ -23,22 +23,24 @@
                             commodi consectetur deleniti dicta doloremque eaque et ipsa iste iusto neque
                             officiis
                             quisquam quo sint, tenetur veritatis voluptas voluptatibus! Laborum, quae?</h5>
-                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
-                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
-                        <i class="mdi mdi-star"></i>
+                        <div><i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i></div>
                         {#                        <select class="custom-select d-block custom-select-sm bg-light" style="width: 100px">#}
                         {#                            <option selected>Qty: 1</option>#}
                         {#                            <option value="1">Qty: 5</option>#}
                         {#                            <option value="2">Qty: 10</option>#}
                         {#                            <option value="3">Qty: 20</option>#}
                         {#                        </select>#}
-                        <input type="number" min="0" class="form-control text-center form-control-sm input-cantidad"
+                        <input type="number" min="1"
+                               class="form-control d-inline-block text-center form-control-sm input-cantidad"
                                placeholder="cantidad" value="1"
                                style="width: 85px">
+                        <button class="btn btn-danger mt-n1 btn-sm"><i class="mdi mdi-trash-can-outline"></i></button>
                     </div>
                 </div>
                 <div class="col-sm-2 col-2">
-                    <span class="float-right pr-2 pt-1 span-price"><b>$ <span>8.98</span></b></span>
+                    <span class="float-right pr-2 pt-1 span-price text-nowrap"><b>$ <span>8.98</span></b></span>
                 </div>
             </div>
         </div>
@@ -57,16 +59,18 @@
                             commodi consectetur deleniti dicta doloremque eaque et ipsa iste iusto neque
                             officiis
                             quisquam quo sint, tenetur veritatis voluptas voluptatibus! Laborum, quae?</h5>
-                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
-                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
-                        <i class="mdi mdi-star"></i>
-                        <input type="number" min="1" class="form-control text-center form-control-sm input-cantidad"
+                        <div><i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i></div>
+                        <input type="number" min="1"
+                               class="form-control d-inline-block text-center form-control-sm input-cantidad"
                                placeholder="cantidad" value="1"
                                style="width: 85px">
+                        <button class="btn btn-danger mt-n1 btn-sm"><i class="mdi mdi-trash-can-outline"></i></button>
                     </div>
                 </div>
                 <div class="col-sm-2 col-2">
-                    <span class="float-right pr-2 pt-1 span-price"><b>$ <span>20.98</span></b></span>
+                    <span class="float-right pr-2 pt-1 span-price text-nowrap"><b>$ <span>20.98</span></b></span>
                 </div>
             </div>
         </div>
@@ -85,16 +89,19 @@
                             commodi consectetur deleniti dicta doloremque eaque et ipsa iste iusto neque
                             officiis
                             quisquam quo sint, tenetur veritatis voluptas voluptatibus! Laborum, quae?</h5>
-                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
-                        <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
-                        <i class="mdi mdi-star"></i>
-                        <input type="number" min="0" class="form-control text-center form-control-sm input-cantidad"
+                        <div>
+                            <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i><i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i></div>
+                        <input type="number" min="1"
+                               class="form-control d-inline-block text-center form-control-sm input-cantidad"
                                placeholder="cantidad" value="1"
                                style="width: 85px">
+                        <button class="btn btn-danger mt-n1 btn-sm"><i class="mdi mdi-trash-can-outline"></i></button>
                     </div>
                 </div>
                 <div class="col-sm-2 col-2">
-                    <span class="float-right pr-2 pt-1 span-price"><b>$ <span>8.98</span></b></span>
+                    <span class="float-right pr-2 pt-1 span-price text-nowrap"><b>$ <span>8.98</span></b></span>
                 </div>
             </div>
         </div>
@@ -121,13 +128,6 @@
             </div>
             <div class="from-group col-md-3 mt-3 mt-md-0">
                 <button type="button" class="btn btn-secondary form-control truncate-1 btn-metodo-pago">PayPal</button>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-12 mt-3 mt-md-0">
-                {#                        <textarea name="area" class="form-control bg-secondary" rows="4"#}
-                {#                                  placeholder="Ni idea q va aki, entonces pongo esto mismo lol"></textarea>#}
-                <div></div>
             </div>
         </div>
     </form>

@@ -10,13 +10,16 @@
         </a>
         <!-- Left navbar links -->
         <ul class="navbar-nav">
-            <a rel="store" class="nav-link px-0 py-0" style="cursor: pointer" data-toggle="modal"
-               data-target="#asd">
-                <i class="mdi mdi-map-marker-outline d-sm-inline-block mdi-24px"></i>
-                <div class="d-md-inline-block d-none">
-                    {#                    <small class="">Enviar a</small>#}
-                    {#                    <br>#}
-                    <span class=""> Cuba</span>
+            <a rel="store" class="nav-link px-0 py-0 text-nowrap">
+                <div class="d-inline-block">
+                    <i class="mdi mdi-map-marker-outline"></i>
+                    <select class="custom-select-sm custom-select cursor-pointer ml-n2 px-1" id="cuba" name="xds">
+                        <option selected>Cuba</option>
+                        <option value="1">Yuma</option>
+                        <option value="2">Dominicana</option>
+                        <option value="3">Haiti</option>
+                        <option value="Otro">Otro</option>
+                    </select>
                 </div>
             </a>
         </ul>
@@ -24,7 +27,7 @@
         <form class="form-inline ml-1 ml-sm-3 form-buscar-navbar">
             <div class="input-group input-group-sm">
                 <li class="dropdown input-group-prepend">
-{% comment %}
+                    {% comment %}
                     <input type="number" min="0" placeholder="cantidad"
                            class="form-control bg-light text-center form-control-sm"
                            style="border-bottom-right-radius: 0;border-top-right-radius: 0;
@@ -53,7 +56,6 @@
         </form>
         <ul class="navbar-nav">
             <a href="{% url 'all_stores' %}" class="nav-link pr-0 py-sm-2 py-0 pl-sm-2 pl-1">
-                {#                <i class="mdi mdi mdi-home-group d-sm-inline-block"></i>#}
                 <span class=" "> Todas las tiendas</span>
             </a>
         </ul>

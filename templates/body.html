@@ -5,14 +5,14 @@
     <div class="wrapper">
         {% block navbar %}
             <!-- Navbar -->
-            {% include 'navbar.html' %}
+            {% include 'navbar2.html' %}
         {% endblock %}
 
         <!-- sub Navbar -->
         {% include 'sub_navbar.html' %}
         <!-- Content -->
         <div class="content">
-            <div class="container-fluid py-2  px-lg-5">
+            <div class="container-fluid py-2  px-lg-4">
                 <!--Carousel-->
                 {% block carousel %}
                     {% include 'carousel.html' %}
@@ -26,14 +26,19 @@
     <!--footer-->
     {% block footer %}
         <footer class="main-footer bg-navy text-center ml-0">
-
+            <div class="align-content-center user-select-none">
+                <img src="{% static 'img/MercoCuba-final-01.png' %}" alt="" height="60">
+                <img src="{% static 'img/letra-white.png' %}" alt="MercoCuba" height="40">
+            </div>
+            <br>
+            <div class="rayita"></div>
             {% block form_footer %}
                 {% include 'form_footer.html' %}
             {% endblock %}
             <br>
 
             <!--text footer-->
-            <div class="row text-left px-2 px-lg-5">
+            <div class="row text-left px-2 px-lg-4">
                 {% for var in 16|rjust:'16' %}
                     {#<div class="col-3 col-sm-2 pb-3">#}
                     <div class="col-md-3 col-lg-2 col-4 col-sm-4 pb-3">
@@ -44,6 +49,7 @@
                     </div>
                 {% endfor %}
             </div>
+            <div class="rayita py-2"></div>
             <span class="text-center">MERCOCUBA©. By GoDjango. Todos los derechos reservados.</span>
         </footer>
     {% endblock %}
