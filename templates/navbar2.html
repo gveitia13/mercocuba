@@ -11,12 +11,12 @@
             <div class="">
                 <ul class="navbar-nav ml-1 ml-sm-3">
                     <li class="nav-item">
-                        <a rel="store" class="nav-link px-0 py-0 text-nowrap">
+                        <a rel="store" class="nav-link px-0 mr-2 py-0 text-nowrap">
                             <div class="d-inline-block">
                                 <i class="mdi mdi-map-marker-outline"></i>
                                 <select class="custom-select-sm custom-select cursor-pointer ml-n2 mt-n1 px-1" id="cuba"
                                         name="xds">
-                                    <option selected>Cuba</option>
+                                    <option selected value="0">Cuba</option>
                                     <option value="1">Yuma</option>
                                     <option value="2">Dominicana</option>
                                     <option value="3">Haiti</option>
@@ -63,8 +63,8 @@
             </div>
         </div>
 
-        <div class="d-inline-block ml-auto">
-            <ul class="navbar-nav">
+        <div class="d-inline-block ml-auto mt-auto">
+            <ul class="navbar-nav pb-2">
                 <li class="">
                     <a href="{% url 'contact' %}" class="nav-link py-0 px-1 px-sm-3">
                         <span class="mdi mdi-contact-mail mdi-30px"></span>

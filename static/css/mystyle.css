@@ -273,6 +273,9 @@
     #prod-img-full {
         height: 35vh !important;
     }
+    .detalle-tienda-cards div.card img{
+        height: auto!important;
+    }
 }
 
 @media screen and (min-width: 576px) {
