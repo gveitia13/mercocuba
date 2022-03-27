@@ -49,6 +49,8 @@ $(document).ready(function () {
     d.querySelectorAll('.app').forEach(e => e.classList.remove('app'))
     d.querySelectorAll('.hs').forEach(e => e.classList.remove('hs', 'full', 'no-scrollbar'))
     d.querySelectorAll('.item').forEach(e => e.classList.remove('item'))
+  } else {
+    d.querySelectorAll('.nav-desktop').forEach(e => e.classList.remove('.nav-desktop'))
   }
   $('#inputGroupSelect').change(function () {
     if ($(this).val() === 'Otro') {
